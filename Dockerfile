@@ -12,10 +12,7 @@ COPY . .
 # Build the project
 RUN npm run webpack
 
-
 FROM nginx:alpine
-
-#!/bin/sh
 
 COPY ./.nginx/nginx.conf /etc/nginx/nginx.conf
 
